@@ -17,14 +17,14 @@ let package = Package(
 		.target(name: "GXUCMapsWrapper",
 				dependencies: [
 					"GXUCMaps",
-					.product(name: "GXCoreModule_Common_Geography", package: "GXCoreModule_Common_Maps", condition: .when(platforms: [.iOS, .tvOS])),
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .tvOS]))
+					.product(name: "GXCoreModule_Common_Geography", package: "GXCoreModule_Common_Maps", condition: .when(platforms: [.tvOS, .iOS])),
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.tvOS, .iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCMaps",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCMaps-1.0.0-beta+20230411173940.xcframework.zip",
-			checksum: "7226fee5c2e150d6a390dc31b874289cc086f9a7e1ba52d500efb558ca80fec1"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCMaps-1.0.0-beta+20230414101841.xcframework.zip",
+			checksum: "74fab936099219305b81599907420f39ae007a2401be44c9f2ec408e02bc1335"
 		)
 	]
 )

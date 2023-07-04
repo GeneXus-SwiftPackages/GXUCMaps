@@ -10,21 +10,21 @@ let package = Package(
 			targets: ["GXUCMapsWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreModule_Common_Maps.git", exact: "1.0.0-beta.20230704132152"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.0.0-beta.20230704132152")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreModule_Common_Maps.git", exact: "1.0.0-beta.20230704143346"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.0.0-beta.20230704143346")
 	],
 	targets: [
 		.target(name: "GXUCMapsWrapper",
 				dependencies: [
 					"GXUCMaps",
-					.product(name: "GXCoreModule_Common_Maps", package: "GXCoreModule_Common_Maps", condition: .when(platforms: [.iOS, .tvOS])),
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .tvOS]))
+					.product(name: "GXCoreModule_Common_Maps", package: "GXCoreModule_Common_Maps", condition: .when(platforms: [.tvOS, .iOS])),
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.tvOS, .iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCMaps",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCMaps-1.0.0-beta.20230704132152.xcframework.zip",
-			checksum: "ef67bab9153e1f20bb762af4a34d9b8a9a3d1270609e61cc8c0a6c3a5ebdcfa7"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCMaps-1.0.0-beta.20230704143346.xcframework.zip",
+			checksum: "0a8b7f780b9b146f91c7bbd4e92a0886417a11be3b5691d9a10c57327a716245"
 		)
 	]
 )

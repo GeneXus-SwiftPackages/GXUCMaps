@@ -10,8 +10,8 @@ let package = Package(
 			targets: ["GXUCMapsWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreModule_Common_Maps.git", exact: "5.0.0-beta.4"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "5.0.0-beta.4")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreModule_Common_Maps.git", exact: "5.0.0-beta.5"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "5.0.0-beta.5")
 	],
 	targets: [
 		.target(name: "GXUCMapsWrapper",
@@ -23,8 +23,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCMaps",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCMaps-5.0.0-beta.4.xcframework.zip",
-			checksum: "0dd7c2d0b3111e81b76eb64a24329394e56efe1b0e1ed52841683beb92980580"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCMaps-5.0.0-beta.5.xcframework.zip",
+			checksum: "9b6260d47681ed91d5e12d5b596cb27cd970712b01e9583dc47a6bc722e614f0"
 		)
 	]
 )
